@@ -1,10 +1,20 @@
+<%- include('customer/includes/head', { pageTitle: 'Home' }) %>
+</head>
 
-   <%-include('includes/head') %>
-   
-   </head>
-
-  <body>
-    <%- include('includes/navbar') %>
-    <%- include('includes/main') %>
+  <body >
     
-      
+    <%- include('customer/includes/navbar') %>
+    <!-- <button class="bg-blue-500 text-white dark:bg-blue-800 dark:text-gray-200">Click me</button> -->
+    <%- include('customer/includes/main') %>
+    <%- include('customer/includes/why') %>
+    <%- include('customer/includes/dis') %>
+    <%- include('customer/includes/footer') %>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#toggle-theme').click(function() {
+          $('html').attr('data-theme', $('html').attr('data-theme') === 'light' ? 'dark' : 'light');
+          $('body').toggleClass('dark');
+        });
+      });
+    </script>

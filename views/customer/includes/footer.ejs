@@ -1,3 +1,53 @@
+<div class="bg-black text-white p-3 sm:flex dark:bg-white dark:text-black ">
+  <div class="p-3  basis-1/4 sm:mx-24 sm:my-10">
+    <div>
+<img class="h-16 w-14" src="img/cook.png" alt="footer chef image">
+<h1 class="font-bold">Flavor <span class="text-orange-400 font-extralight">Fussion</span>
+</h1>
+    </div>
+    <p class=" font-extralight text-slate-400 text-xs pr-12 dark:text-black">At our restaurant, we pride 
+      ourselves on delivering an exceptional dining experience that tantalizes the taste buds
+       and creates lasting memories</p>
+  </div>
+  <div class=" basis-1/2 sm:pt-4 sm:mx-24 sm:my-10">
+<div class="p-3 pt-2 ">
+  <h2 class="font-bold">Contact</h2>
+  <ul class="text-xs  text-slate-400  dark:text-black">
+    <li  class="text-extralight  pt-2"><i class="fa-solid fa-phone"></i> 6369145671</li>
+    <li class="text-extralight  pt-2"><i class="fa-solid fa-envelope"></i> harishkumarsp023@gmail.com</li>
+    <li class="text-extralight  pt-2"><i class="fa-solid fa-location-dot"></i> Tamilnadu,India</li>
+    <li class="text-extralight  pt-2"><i class="fa-solid fa-copyright"></i> 2023 HackDesk Technologies. All rights reserved.</li>
+  </ul>
+ 
+    
+ 
+</div>
+  </div>
+</div>
+<script>
+const darkModeToggle = document.querySelector('#darkModeToggle');
+    const body = document.body;
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      body.classList.toggle('dark');
+      const isDarkMode = body.classList.contains('dark');
+      localStorage.setItem('darkMode', isDarkMode);
+    }
+
+    // Event listener for the dark mode toggle button
+    darkModeToggle.addEventListener('click', toggleDarkMode);
+
+    // Check if dark mode is set in local storage
+    const isDarkMode = JSON.parse(localStorage.getItem('darkMode'));
+    if (isDarkMode) {
+      body.classList.add('dark');
+    }
+
+</script>
+
+
+
 <script src="js/action.js"></script>
       <script src="https://kit.fontawesome.com/65210e3c63.js" crossorigin="anonymous"></script>
       
