@@ -16,6 +16,7 @@ async function signup(req,res){
         req.body.email,
         req.body.password,
         req.body.fullname,
+        req.body.confirmpassword
       
         // req.body.street,
         // req.body.postal,
